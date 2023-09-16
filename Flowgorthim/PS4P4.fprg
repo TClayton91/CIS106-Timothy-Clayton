@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-16 03:12:03 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVQ0NUZIMlU7MjAyMy0wOS0xNjswMzowNzozMCBQTTszMzIx"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVQ0NUZIMlU7MjAyMy0wOS0xNjswMzoxMjowMyBQTTsxOzM0MjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstname" type="String" array="False" size=""/>
+            <declare name="steps" type="Real" array="False" size=""/>
+            <declare name="caloriesburned" type="Real" array="False" size=""/>
+            <input variable="firstname"/>
+            <input variable="steps"/>
+            <assign variable="firstname" expression="firstname"/>
+            <assign variable="caloriesburned" expression="steps * 0.25"/>
+            <output expression="&quot;Name: &quot; &amp;firstname" newline="True"/>
+            <output expression="&quot;Calories Burned: &quot; &amp;caloriesburned" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

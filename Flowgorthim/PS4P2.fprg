@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-16 02:17:41 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLVQ0NUZIMlU7MjAyMy0wOS0xNjswMjoxMjo1OCBQTTszMzI2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVQ0NUZIMlU7MjAyMy0wOS0xNjswMjoxNzo0MSBQTTsxOzM0MzE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pricepershare" type="Real" array="False" size=""/>
+            <declare name="currentpriceofshare" type="Real" array="False" size=""/>
+            <declare name="quantityofshare" type="Real" array="False" size=""/>
+            <declare name="changeinvalue" type="Real" array="False" size=""/>
+            <input variable="pricepershare"/>
+            <input variable="currentpriceofshare"/>
+            <input variable="quantityofshare"/>
+            <assign variable="changeinvalue" expression="(currentpriceofshare - pricepershare) * quantityofshare"/>
+            <output expression="&quot;Your change in value is $&quot; &amp;changeinvalue" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
