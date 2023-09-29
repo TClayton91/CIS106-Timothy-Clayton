@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-29 02:04:37 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJEQzc4UDY7MjAyMy0wOS0yOTswMTo1ODoxNyBQTTszMjk4"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTJEQzc4UDY7MjAyMy0wOS0yOTswMjowNDozNyBQTTsxOzM0MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="employeeslastname" type="String" array="False" size=""/>
+            <declare name="salary" type="Real" array="False" size=""/>
+            <declare name="joblevel" type="Real" array="False" size=""/>
+            <declare name="bonus" type="Real" array="False" size=""/>
+            <declare name="bonusrate" type="Real" array="False" size=""/>
+            <input variable="employeeslastname"/>
+            <input variable="salary"/>
+            <input variable="joblevel"/>
+            <if expression="joblevel &gt;=10">
+                <then>
+                    <assign variable="bonusrate" expression="0.25"/>
+                </then>
+                <else>
+                    <if expression="joblevel &gt;= 5 and joblevel &lt;=9">
+                        <then>
+                            <assign variable="bonusrate" expression="0.20"/>
+                        </then>
+                        <else>
+                            <assign variable="bonusrate" expression="0.10"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="bonus" expression="salary * bonusrate"/>
+            <output expression="&quot;Last Name: &quot;&amp;employeeslastname" newline="True"/>
+            <output expression="&quot;Bonus: $&quot;&amp;bonus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
