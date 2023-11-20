@@ -1,0 +1,10 @@
+Clayton
+100
+Smith
+50 
+Jones
+77
+Shepler
+68
+Caddell
+60
